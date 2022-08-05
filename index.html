@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descalzo's Tip Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header of the website -->
+    <header class="header container">
+      <h1 class="header__title">Descalzo's tip calculator</h1>
+      <h2 class="header__subtitle">Calculate your bill easily!</h2>
+    </header>
+
+    <!-- Main app -->
+    <main class="main container">
+      <!--  Section with the form asking the user for data -->
+      <section class="main__section main__data">
+        <form class="main__form">
+          <!-- Price of the bill -->
+          <label for="formPrice" class="form__label">Price of the bill</label>
+          <input type="number" id="formPrice" class="form__input" />
+
+          <!-- Percentage of the tip -->
+          <label for="formPercentage" class="form__label">Tip Percentage</label>
+          <input type="number" id="formPercentage" class="form__input" />
+
+          <!-- People sharing the bill -->
+          <label for="formPeople" class="form__label"
+            >People sharing the bill</label
+          >
+          <input type="number" id="formPeople" class="form__input" />
+
+          <button type="button" class="form__button" id="formButton">
+            Calculate
+          </button>
+        </form>
+      </section>
+
+      <!-- Section displaying the results -->
+      <section class="main__section main__results">
+        <p class="main__results">
+          Total tip: <span class="main__price" id="totalTip"></span>€
+        </p>
+        <p class="main__results">
+          Tip per person: <span class="main__price" id="tipPerPerson"></span>
+          €
+        </p>
+      </section>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
